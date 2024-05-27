@@ -1,0 +1,76 @@
+# Ignore target directories.
+**/target/
+
+# Ignore IntelliJ IDEA files
+*.iml
+**/.idea/
+
+# Ignore cache and build directories
+.cache/
+/build/
+/dist/
+/*.egg-info/
+
+# Ignore test coverage files
+.coverage
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Eclipse project files
+*.project
+
+# Ignore site-specific files
+/site/img/docs
+/site/dat/eg_globals.xml
+/site/composer.lock
+/site/.htaccess
+/site/vendor
+/site/img/design
+/site/dat/tmp
+
+# Ignore Node.js modules and npm debug log
+node_modules
+.npm
+npm-debug.log
+
+# Ignore Taurus and JMeter generated files
+/tests/build/
+/examples/BOOTH1/converted/
+bzt/resources/NUnitRunner/*
+.gradle
+integr-artifacts*
+*.log
+examples/local*
+bzt/20*
+
+# Ignore environment configuration files
+.env
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environment directories
+venv/
+.venv/
+
+# Ignore JetBrains IDE directories
+.idea/
+
+# Ignore Python virtual environment files
+__pycache__/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore JMeter result files
+**/*.jtl
+
+# Ignore MacOS specific files
+._*
+.Spotlight-V100
+.Trashes
