@@ -1,0 +1,43 @@
+{
+ "execution": [
+  {
+   "concurrency": 5,
+   "ramp-up": "1m",
+   "hold-for": "5m",
+   "scenario": "simple_test"
+  }
+ ],
+ "scenarios": {
+  "simple_test": {
+   "requests": [
+    {
+     "url": "${BASE_URL}/",
+     "method": "GET",
+     "headers": {
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+     },
+     "assertions": [
+      {
+       "contains": {
+        "subject": "latency",
+        "less-than-equals": 4000
+       }
+      }
+     ]
+    }
+   ],
+   "think-time": "2s"
+  }
+ },
+ "reporting": [
+  {
+   "module": "final-stats",
+   "summary": true,
+   "percentiles": true,
+   "test-duration": true,
+   "dump-xml": "report.xml",
+   "dump-csv": "report.csv",
+   "dump-json": "report.json"
+  }
+ ]
+}

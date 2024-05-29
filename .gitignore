@@ -83,3 +83,4 @@ apache-jmeter-5.6.3/printable_docs/*
 !versions.json
 #Ignore test files.
 apache-jmeter-5.6.3/
+apache-jmeter-5.6.3.tgz
