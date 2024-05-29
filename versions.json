@@ -1,0 +1,22 @@
+{
+  "java": {
+    "version": "11",
+    "installation_command": "brew install openjdk@11"
+  },
+  "jdk": {
+    "version": "11",
+    "installation_command": "brew install openjdk@11"
+  },
+  "python": {
+    "version": "3.9",
+    "installation_command": "brew install python@3.9"
+  },
+  "jmeter": {
+    "version": "5.6.3",
+    "installation_command": "wget https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.6.3.tgz && tar -xvzf apache-jmeter-5.6.3.tgz"
+  },
+  "taurus": {
+    "version": "latest",
+    "installation_command": "pip install bzt"
+  }
+}

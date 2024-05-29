@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FinalStatus>
+  <TestDuration>353.0</TestDuration>
+  <ReportURL>https://a.blazemeter.com/app/?public-token=VDKKF1liB8SGoSDSIjxPrZNfwYoz6sScRjPRZOU7lScOXsfk2K#reports/r-ext-6656e40f703e1073573846/summary</ReportURL>
+  <Group label="${BASE_URL}/">
+    <throughput value="825">
+      <name>throughput</name>
+      <value>825</value>
+    </throughput>
+    <concurrency value="5">
+      <name>concurrency</name>
+      <value>5</value>
+    </concurrency>
+    <succ value="0">
+      <name>succ</name>
+      <value>0</value>
+    </succ>
+    <fail value="825">
+      <name>fail</name>
+      <value>825</value>
+    </fail>
+    <avg_rt value="0.00000">
+      <name>avg_rt</name>
+      <value>0.00000</value>
+    </avg_rt>
+    <stdev_rt value="0.00005">
+      <name>stdev_rt</name>
+      <value>0.00005</value>
+    </stdev_rt>
+    <avg_lt value="0.00000">
+      <name>avg_lt</name>
+      <value>0.00000</value>
+    </avg_lt>
+    <avg_ct value="0.00000">
+      <name>avg_ct</name>
+      <value>0.00000</value>
+    </avg_ct>
+    <bytes value="891825">
+      <name>bytes</name>
+      <value>891825</value>
+    </bytes>
+    <rc value="825" param="URISyntaxException">
+      <name>rc/URISyntaxException</name>
+      <value>825</value>
+    </rc>
+    <perc value="0.00000" param="0.0">
+      <name>perc/0.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00000" param="50.0">
+      <name>perc/50.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00000" param="90.0">
+      <name>perc/90.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00000" param="95.0">
+      <name>perc/95.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00000" param="99.0">
+      <name>perc/99.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00100" param="99.9">
+      <name>perc/99.9</name>
+      <value>0.00100</value>
+    </perc>
+    <perc value="0.00100" param="100.0">
+      <name>perc/100.0</name>
+      <value>0.00100</value>
+    </perc>
+  </Group>
+  <Group label="">
+    <throughput value="825">
+      <name>throughput</name>
+      <value>825</value>
+    </throughput>
+    <concurrency value="5">
+      <name>concurrency</name>
+      <value>5</value>
+    </concurrency>
+    <succ value="0">
+      <name>succ</name>
+      <value>0</value>
+    </succ>
+    <fail value="825">
+      <name>fail</name>
+      <value>825</value>
+    </fail>
+    <avg_rt value="0.00000">
+      <name>avg_rt</name>
+      <value>0.00000</value>
+    </avg_rt>
+    <stdev_rt value="0.00005">
+      <name>stdev_rt</name>
+      <value>0.00005</value>
+    </stdev_rt>
+    <avg_lt value="0.00000">
+      <name>avg_lt</name>
+      <value>0.00000</value>
+    </avg_lt>
+    <avg_ct value="0.00000">
+      <name>avg_ct</name>
+      <value>0.00000</value>
+    </avg_ct>
+    <bytes value="891825">
+      <name>bytes</name>
+      <value>891825</value>
+    </bytes>
+    <rc value="825" param="URISyntaxException">
+      <name>rc/URISyntaxException</name>
+      <value>825</value>
+    </rc>
+    <perc value="0.00000" param="0.0">
+      <name>perc/0.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00000" param="50.0">
+      <name>perc/50.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00000" param="90.0">
+      <name>perc/90.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00000" param="95.0">
+      <name>perc/95.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00000" param="99.0">
+      <name>perc/99.0</name>
+      <value>0.00000</value>
+    </perc>
+    <perc value="0.00100" param="99.9">
+      <name>perc/99.9</name>
+      <value>0.00100</value>
+    </perc>
+    <perc value="0.00100" param="100.0">
+      <name>perc/100.0</name>
+      <value>0.00100</value>
+    </perc>
+  </Group>
+</FinalStatus>

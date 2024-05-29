@@ -1,0 +1,3 @@
+# Assertions.
+Durations :- 4seconds.
+Salesforce API :- sfwiedget verify.
