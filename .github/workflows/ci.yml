@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  jmeter_test:
+    runs-on: ubuntu-latest
+
+    env:
+      JMETER_HOME: /opt/apache-jmeter-5.6.3
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -qq -y wget
+          wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
+          tar xzf apache-jmeter-5.6.3.tgz -C /opt
+
+      - name: Run setup script
+        run: |
+          chmod +x tests/scripts/setupScript.sh
+          tests/scripts/setupScript.sh
+
+      - name: Run JMeter tests
+        run: |
+          mkdir -p results
+          $JMETER_HOME/bin/jmeter -n -t tests/scenarios/scenario1.jmx -l results/results.jtl
+
+      - name: Run teardown script
+        run: |
+          chmod +x tests/scripts/teardownScript.sh
+          tests/scripts/teardownScript.sh
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: jmeter-results
+          path: results/results.jtl
